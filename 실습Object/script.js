@@ -24,5 +24,45 @@
 */
 
 var poke1 = {
-	
+	name: document.getElementById("name1"),
+	level: document.getElementById("level"),
+	cha: document.getElementById("cha1")
+}
+var poke2 = {
+	name: document.getElementById("name2"),
+	level: document.getElementById("leve2"),
+	cha: document.getElementById("cha2")
+}
+var poke3 = {
+	name: document.getElementById("name3"),
+	level: document.getElementById("leve3"),
+	cha: document.getElementById("cha3")
+}
+
+
+if (parselnt(poke1.level.innerHTML) >= 10) {
+	poke1.cha.src = 'icon01_2.png';
+	poke1.name1.innerHTML = "이상해풀";
+}
+if (parselnt(poke1.level.innerHTML) >= 20) {
+	poke1.cha.src = 'icon01_3.png';
+	poke1.name1.innerHTML = "이상해꽃";
+}
+
+if (parselnt(poke1.level.innerHTML) >= 10) {
+	poke2.cha.src = 'icon02_2.png';
+	poke2.name2.innerHTML = "리자드";
+}
+if (parselnt(poke1.level.innerHTML) >= 20) {
+	poke2.cha.src = 'icon02_3.png';
+	poke2.name2.innerHTML = "리자몽";
+}
+
+if (parselnt(poke1.level.innerHTML) >= 10) {
+	poke3.cha.src = 'icon03_2.png';
+	poke3.name3.innerHTML = "어니부기";
+}
+if (parselnt(poke1.level.innerHTML) >= 20) {
+	poke3.cha.src = 'icon03_3.png';
+	poke3.name3.innerHTML = "거북왕";
 }
