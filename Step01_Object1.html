@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step01_Object1.html</title>
+</head>
+<body>
+    <script>
+        /*
+            [ Object type]
+             - {} 를 이용해서 만들 수 있다.
+             - {key1:value1, key2:value2, ...} 의 형태로 구성된다.
+             - 사전 형태로 데이터를 관리하는 방식
+             - 순서가 중요하지 않은 데이터를 다룬다.
+        */
+       var men = {
+        num : 1,
+        name : '짱구',
+        addr : '안양'
+       }
+
+       var men2 = {};
+       men2.num = 2;
+       men2.name = '짱아';
+       men2.addr = '서울';
+
+       console.log(men);
+       console.log(men2);
+
+       var myName = men.name;
+       console.log(myName);
+
+       men.name = '철수';
+       console.log(men);
+
+       delete men.addr;
+       console.log(men);
+    </script>
+</body>
+</html>

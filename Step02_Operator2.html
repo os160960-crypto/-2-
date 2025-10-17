@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step02_Operator2.html</title>
+</head>
+<body>
+    <script>
+        /*
+            [논리 연산자 ]
+            - 논리값 true, folse 을 계산해주는 연산자
+
+            && :(AND)연산자(교집합) (a 이면서 b) A&&B
+            || :(OR)연산자(합집합) (A일수도 있고 B일수도 있다) A||B
+            ! :(NOT)연산자 (여집합) a가 아니면 true 
+        */
+       // and 연산은 참여하는 booleans 값이 모두 true 일때
+       // 결과가 true
+       var result1 = false && false; // false
+       var result2  = false && true; // false
+       var result3 = true && false; // false
+       var result4 = true && true; // true
+
+        // or 연산은 참여하는 booleans 값 중에 하나라도 true 이면
+        // 결과가 true
+       var result5 = false || false; // false
+       var result6 = false || true; // true
+       var result7 = true || false; // true
+       var result8 = true || true; // true
+
+        // not 연산은 값을 반전 반대로
+       var result9 = !false; // true
+
+       var isWeb = true;
+       var isUXui = true;
+
+       if(isWeb && isUXui){
+        alert('포폴반에 들어올 수 있습니다.')
+       }
+    </script>
+</body>
+</html>
